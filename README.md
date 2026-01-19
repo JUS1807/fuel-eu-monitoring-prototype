@@ -60,7 +60,8 @@ The processing logic follows a strict sequence:
 
 ## 4. Repository Structure
 
-'''fuel-eu-monitoring-prototype/
+```
+fuel-eu-monitoring-prototype/
 ├── notebooks/
 │   ├── pipeline/
 │   └── archive/
@@ -71,7 +72,8 @@ The processing logic follows a strict sequence:
 ├── src/
 ├── reports/
 ├── .gitignore
-└── README.md'''
+└── README.md
+```
 
 ---
 
