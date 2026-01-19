@@ -60,7 +60,7 @@ The processing logic follows a strict sequence:
 
 ## 4. Repository Structure
 
-fuel-eu-monitoring-prototype/
+'''fuel-eu-monitoring-prototype/
 ├── notebooks/
 │   ├── pipeline/
 │   └── archive/
@@ -71,7 +71,7 @@ fuel-eu-monitoring-prototype/
 ├── src/
 ├── reports/
 ├── .gitignore
-└── README.md
+└── README.md'''
 
 ---
 
@@ -83,6 +83,7 @@ The repository is structured to ensure conceptual reproducibility:
 - clear distinction between exploratory and pipeline-critical code.
 
 Execution currently assumes that required input data is available locally and paths are configured accordingly.
+The prototype is implemented in Python (tested with Python 3.11) and executed via Jupyter notebooks.
 
 ---
 
