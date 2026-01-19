@@ -36,7 +36,7 @@ The analytical pipeline is implemented primarily via ordered Jupyter notebooks l
 The processing logic follows a strict sequence:
 
 1. Preprocessing  
-   Cleaning and standardization of AIS- and LCC-related input data.
+   Cleaning and standardization of AIS- and MRV-related input data.
 
 2. Initial Feature Derivation  
    Computation of first-order operational indicators and proxy variables.
@@ -60,17 +60,25 @@ The processing logic follows a strict sequence:
 
 ## 4. Repository Structure
 
+The repository follows a clear separation between code, notebooks, and data.
+Raw and processed data are not versioned and are expected to be available locally.
+
+
 ```
 fuel-eu-monitoring-prototype/
 ├── notebooks/
-│   ├── pipeline/
-│   └── archive/
-├── data/
-│   ├── raw/
-│   ├── interim/
-│   └── processed/
-├── src/
-├── reports/
+│   ├── pipeline/      # Ordered, pipeline-critical notebooks
+│   └── archive/       # Exploratory and deprecated notebooks
+│
+├── data/              # Logical data structure (not versioned)
+│   ├── raw/           # External raw input data (AIS, MRV, etc.)
+│   ├── interim/       # Intermediate processing results
+│   └── processed/     # Final model-ready datasets and outputs
+│
+├── src/               # Architectural skeleton for modularization
+│
+├── reports/           # Generated tables and figures (not versioned)
+│
 ├── .gitignore
 └── README.md
 ```
@@ -86,6 +94,12 @@ The repository is structured to ensure conceptual reproducibility:
 
 Execution currently assumes that required input data is available locally and paths are configured accordingly.
 The prototype is implemented in Python (tested with Python 3.11) and executed via Jupyter notebooks.
+
+### Data Availability
+
+Due to size and licensing constraints, raw input data is not included in this repository.
+The pipeline assumes that AIS- and MRV-related input data is available locally and
+placed in the corresponding `data/raw/` directory.
 
 ---
 
