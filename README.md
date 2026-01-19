@@ -135,7 +135,8 @@ fuel-eu-monitoring-prototype/
 ├── reports/           # Generated tables and figures (not versioned)
 │
 ├── .gitignore
-└── README.md```
+└── README.md
+```
 
 ---
 
